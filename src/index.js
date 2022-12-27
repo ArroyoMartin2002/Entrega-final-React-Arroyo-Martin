@@ -1,13 +1,30 @@
+/*Importaciones*/
+
+/* Modulos */
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+
+/* Estilos */
 import './index.css';
-import App from './App';
+import "bootstrap/dist/css/bootstrap.min.css";
+
+/* Componentes */
+/* import App from './App'; */
+import NavBar from './components/navbar/NavBar.js'
+import ItemlistContainer from './components/itemListContainer/ItemListContainer';
+
+/* Web vitals */
 import reportWebVitals from './reportWebVitals';
 
+
+////////* Logica *//////////
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+
+    <NavBar/>
+    <ItemlistContainer greeting="¡Bienvenido, Usuario!"/>
+    
   </React.StrictMode>
 );
 
