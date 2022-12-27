@@ -6,22 +6,32 @@
     font-family: sans-serif;
 }
 
-.container-navbar{
-    gap: 3rem;
+header{
+    background-color: rgb(166, 10, 51) ;
 }
 
 .dropdown-menu{
-    background-color: black;
+    background-color: rgb(242, 242, 242);
 }
 
-.drop{
+.nav-link {
     color: white;
-    background-color: black;
+}
+
+.nav-link:hover{
+    transform: scale(1.1);
+    animation: scale 1s;
 }
 
 .logo{
-    width: 12rem;
+    width: 8.5rem;
 }
 
-
-
+@keyframes scale {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.05);
+    }
+}

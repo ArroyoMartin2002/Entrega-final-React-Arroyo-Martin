@@ -1,0 +1,39 @@
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgb(166, 10, 51) 
+}
+
+.logo-footer{
+    width: 5rem;
+}
+
+.logo-footer:hover {
+    animation: rotate 1s;
+}
+
+.redes{
+    display: flex;
+    gap: 15px;
+    filter: brightness(100);
+}
+
+.redes a >  :hover{ 
+    animation: rotate 1s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+        transform: translateY(0);
+    }
+    50% {
+        transform: rotate(30deg);
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: rotate(0deg);
+        transform: translateY(0);
+    }
+}

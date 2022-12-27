@@ -3,7 +3,7 @@
 //Modulos
 //Estilos
 import './NavBar.css'
-import logo from "./img/logoMscTransparent.png";
+import logo from '../../assets/img/logo.png'
 import CartWidget from '../cartWidget/CartWidget'
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -19,11 +19,12 @@ const NavBar = (props) => { //Funcion constructora o arrow function
     //Retorno que va a renderizar
     return (
         <header>
-            <Navbar className='p-0 m-0' collapseOnSelect expand="lg" bg="black" variant="dark">
+            <Navbar className='p-0 m-0' collapseOnSelect expand="lg" variant="dark">
                 <Container className='gap-5'>
                     <Navbar.Brand href="./index.html">
                         <img className='logo' alt='logo' src={logo}></img>
                     </Navbar.Brand>
+                    <CartWidget></CartWidget>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto">
@@ -36,7 +37,6 @@ const NavBar = (props) => { //Funcion constructora o arrow function
                         <Nav.Link href="#">CONTACTO</Nav.Link>
                     </Nav>
                     </Navbar.Collapse>
-                    <CartWidget></CartWidget>
                 </Container>
             </Navbar>
         </header>

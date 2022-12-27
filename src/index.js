@@ -12,6 +12,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 /* import App from './App'; */
 import NavBar from './components/navbar/NavBar.js'
 import ItemlistContainer from './components/itemListContainer/ItemListContainer';
+import Footer from './components/footer/Footer';
+
 
 /* Web vitals */
 import reportWebVitals from './reportWebVitals';
@@ -23,8 +25,11 @@ root.render(
   <React.StrictMode>
 
     <NavBar/>
+
     <ItemlistContainer greeting="¡Bienvenido, Usuario!"/>
-    
+
+    <Footer/>
+
   </React.StrictMode>
 );
 

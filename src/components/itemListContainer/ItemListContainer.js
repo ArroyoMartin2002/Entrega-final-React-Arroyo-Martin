@@ -12,9 +12,9 @@ const ItemlistContainer = (props) => {
   //Funcion constructora o arrow function
   //Retorno que va a renderizar
     return (
-        <body>
-            <p className="">{props.greeting}</p>
-        </body>
+        <section>
+            <p className="saludo">{props.greeting}</p>
+        </section>
     );
 };
 

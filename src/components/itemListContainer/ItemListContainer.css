@@ -1,0 +1,10 @@
+section{
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.saludo{
+    font-size: larger;
+    margin: 25px 0;
+}
