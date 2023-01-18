@@ -1,26 +1,35 @@
 *{ 
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
     list-style: none;
-    font-family: sans-serif;
+    font-family: inherit;
 }
 
 header{
-    background-color: rgb(166, 10, 51) ;
+    background: linear-gradient(90deg, rgb(137, 5, 40) 0%, rgba(115,2,32,1) 100%);  
 }
 
 .dropdown-menu{
-    background-color: rgb(242, 242, 242);
+    background-color: rgb(153, 6, 46);
+}
+
+.navbar-nav{
+    font-family: sans-serif;
+}
+
+.dropdown-menu a{
+    color: white;
+    text-shadow: 1px 1px 1px black;
 }
 
 .nav-link {
     color: white;
+    font-size: 1.2rem;
 }
 
 .nav-link:hover{
-    transform: scale(1.1);
-    animation: scale 1s;
+    transform: scale(1.01);
+    animation: scale 1s infinite;
 }
 
 .logo{
@@ -32,6 +41,12 @@ header{
         transform: scale(1);
     }
     100%{
-        transform: scale(1.05);
+        transform: scale(1.01);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container{
+        height: 100px;
     }
 }

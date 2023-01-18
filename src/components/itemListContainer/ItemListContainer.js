@@ -1,20 +1,25 @@
 /* Importacion */
 
 //Modulos
+import { useParams } from "react-router-dom";
+import { useEffect } from "react";
+
 //Estilos
 import "./ItemListContainer.css";
 
 //Componentes
+import Itemlist from "../itemlist/ItemList";
+
+
 //Estilos
 
 /* Logica */
 const ItemlistContainer = (props) => {
-  //Funcion constructora o arrow function
-  //Retorno que va a renderizar
+
     return (
-        <section>
-            <p className="saludo">{props.greeting}</p>
-        </section>
+            <section>
+                <Itemlist/>
+            </section>
     );
 };
 

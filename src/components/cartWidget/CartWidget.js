@@ -8,14 +8,14 @@ import { RiShoppingCartLine } from "react-icons/ri";
 //Estilos
 
 /* Logica */
-const CartWidget = () => {
+const CartWidget = (props) => {
   //Funcion constructora o arrow function
 
   //Retorno que va a renderizar
     return (
-        <div>
-            <RiShoppingCartLine className="cart w-40"></RiShoppingCartLine>    
-            <span className="counter fs-6">0</span>
+        <div className="cart">
+            <RiShoppingCartLine size={30} className="cartLogo w-40"></RiShoppingCartLine>    
+            <span className="counterCart fs-6">{props.quantity}</span>
         </div>
     );
 };

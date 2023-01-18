@@ -1,8 +1,21 @@
 .cart{
-    filter: invert(100%);
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    transform: translateY(5px);
 }
 
-.counter{
+.cartLogo{
+    filter: invert(100%);   
+}
+
+.counterCart{
     color: white;
-    padding: 10px;
+    align-self: center;
+}
+
+@media screen and (max-width: 990px) {
+    .cart{
+        margin-bottom: 15px;
+    }
 }

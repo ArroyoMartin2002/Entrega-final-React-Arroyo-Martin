@@ -1,0 +1,32 @@
+
+.hero {
+    display: flex;
+    background-image: url("https://img4.goodfon.com/wallpaper/nbig/1/21/gitary-magazin-muzyka.jpg");
+    height: 87.2vh;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero img {
+    filter: drop-shadow(1px 1px 5px black);
+}
+
+.text {
+    margin: 0;
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 0px 7px rgba(0, 0, 0, 0.5), 
+	-3px 0px 7px rgba(0, 0, 0, 0.5), 
+	0px 4px 7px rgba(0, 0, 0, 0.5);
+    transform: translateY(-80px);
+    font-family: 'Explora', cursive;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+

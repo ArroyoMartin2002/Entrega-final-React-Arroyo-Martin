@@ -1,0 +1,26 @@
+.img-detail{
+    width: 21rem;
+    padding: 30px;
+    background-color: white;
+}
+
+figure {
+    justify-self: end;
+    align-self: stretch;
+}
+
+.text-detail{
+    width: 20rem;
+    justify-self: start;
+}
+
+.text-detail .counter div.ui{
+    justify-content: start;
+}
+
+
+
+
+
+
+

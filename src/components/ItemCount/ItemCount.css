@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.counter{
+    margin-top: auto;
+    align-self: center;
+}
+
+.addToCart{   
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 9px;
+    background-color: rgba(166,10,51,1);
+    margin: 15px 0;
+}
+
+.ui{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.ui > p{   
+    color: black;
+}
+
+.ui > button {
+    text-align: center;
+    line-height: 0;
+    border: none;
+    background-color: rgba(166,10,51,1);
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.ui > * {
+    margin: 0;
+}

@@ -9,7 +9,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-
+import { Link } from 'react-router-dom';
 //Componentes
 //Estilos
 
@@ -20,21 +20,23 @@ const NavBar = (props) => { //Funcion constructora o arrow function
     return (
         <header>
             <Navbar className='p-0 m-0' collapseOnSelect expand="lg" variant="dark">
-                <Container className='gap-5'>
-                    <Navbar.Brand href="./index.html">
+                <Container>
+                    <Navbar.Brand as={Link} to="/">
                         <img className='logo' alt='logo' src={logo}></img>
                     </Navbar.Brand>
-                    <CartWidget></CartWidget>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="ms-auto">
-                        <Nav.Link href="#">NOSOTROS</Nav.Link>
-                        <NavDropdown title="PRODUCTOS" id="collasible-nav-dropdown">
-                            <NavDropdown.Item className='drop' href="#">GUITARRAS</NavDropdown.Item>
-                            <NavDropdown.Item className='drop' href="#">BAJOS</NavDropdown.Item>
-                            <NavDropdown.Item className='drop' href="#">PEDALES</NavDropdown.Item>
+                    <Nav className="ms-auto gap-3">
+                        <Nav.Link as={Link} to="/aboutus"> ABOUT US</Nav.Link>
+                        <NavDropdown title="PRODUCTS" id="collasible-nav-dropdown">
+                            <NavDropdown.Item as={Link} to="/products" className='drop' href="#">CATALOGUE</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="products/category/electronics" className='drop' href="#">- Electronics</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="products/category/jewelery" className='drop' href="#">- Jewelery</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="products/category/men's clothing" className='drop' href="#">- Men's Clothing</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="#">CONTACTO</Nav.Link>
+                        
+                        <Nav.Link as={Link} to="/contact">CONTACT</Nav.Link>
+                        <CartWidget quantity={20} />
                     </Nav>
                     </Navbar.Collapse>
                 </Container>

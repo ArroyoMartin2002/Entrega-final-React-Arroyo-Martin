@@ -1,0 +1,18 @@
+.contenedorProductos{
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 4rem;
+    margin: 3rem 0;
+    min-height: 65vh;
+    gap: 1px;
+}
+
+.sectionName{
+    color: rgb(166, 10, 51);
+    font-weight: 700;
+    text-align: center;
+    margin-top: 15px;
+}

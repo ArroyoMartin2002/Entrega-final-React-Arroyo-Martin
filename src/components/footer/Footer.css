@@ -1,8 +1,5 @@
 footer{
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    background-color: rgb(166, 10, 51) 
+    background: linear-gradient(90deg, rgb(135, 5, 40) 0%, rgba(115,2,32,1) 100%);
 }
 
 .logo-footer{
@@ -10,7 +7,7 @@ footer{
 }
 
 .logo-footer:hover {
-    animation: rotate 1s;
+    animation: rotate 1s infinite;
 }
 
 .redes{
