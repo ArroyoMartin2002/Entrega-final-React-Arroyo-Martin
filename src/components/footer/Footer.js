@@ -13,7 +13,7 @@ const Footer = () => {
         <footer>
             <div className='contenedor d-flex align-items-center justify-content-evenly'>
                 <Link to="/" ><img alt='logo' className='logo-footer' src={logo}></img></Link>
-                <p className='text-white align-items-center align-self-end'>© 2022 MSC Store</p>
+                <p className='text-white align-items-center align-self-end'>© 2023 MSC Store</p>
                 <div className='redes'>
                     <a href='www.facebook.com'><FaFacebookF/></a>
                     <a href='www.instagram.com'><FaInstagram/></a>

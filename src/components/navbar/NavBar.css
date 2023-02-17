@@ -5,12 +5,22 @@
     font-family: inherit;
 }
 
+.dropdown-menu.show{
+    border-radius: 0;
+}
+
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
 header{
     background: linear-gradient(90deg, rgb(137, 5, 40) 0%, rgba(115,2,32,1) 100%);  
 }
 
 .dropdown-menu{
-    background-color: rgb(153, 6, 46);
+    background-color: rgb(152, 6, 45);
 }
 
 .navbar-nav{
@@ -24,7 +34,7 @@ header{
 
 .nav-link {
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .nav-link:hover{
@@ -33,7 +43,7 @@ header{
 }
 
 .logo{
-    width: 8.5rem;
+    width: 10rem;
 }
 
 @keyframes scale {

@@ -18,28 +18,25 @@ const ItemCount = (props) => {
     /* sumar */
     const addOne = () => {
         if(count < props.stock){
-            setCount(count + 1)
-            props.guardarCantidadAComprar(count)
-        }
-        
+            setCount(count + 1)}
+        props.guardarCantidadAComprar(count + 1)
     }
     /* restar */
     const minusOne = () => {
-        if(count > 0){
-            setCount(count - 1)
-            props.guardarCantidadAComprar(count)
-        }
-        
+        if(count !== 0 ){
+            setCount(count - 1)}
+        props.guardarCantidadAComprar(count - 1)
     }
+
+
 
     return (
         <div className='counter'>
             <div className='ui'>
-                <button onClick={minusOne}>-</button>
+                <button disabled = {props.stock === 0} onClick={minusOne}>-</button>
                 <p>{count}</p>
-                <button onClick={addOne}>+</button>
+                <button disabled = {props.stock === 0} onClick={addOne}>+</button>
             </div>
-            
         </div>
     );
 };

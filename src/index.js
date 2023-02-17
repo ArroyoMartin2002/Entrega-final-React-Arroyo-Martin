@@ -11,6 +11,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 /* Componentes */
 /* import App from './App'; */
+import CartProvider from './components/Context/CartContext';
+
 import NavBar from './components/navbar/NavBar.js'
 import Home from './components/home/Home';
 import ItemlistContainer from './components/itemListContainer/ItemListContainer';
@@ -18,6 +20,7 @@ import Footer from './components/footer/Footer';
 import AboutUs from './components/abouUs/AboutUs'; 
 import ItemDetailContainer from './components/itemDetailContainer/ItemDetailContainer';
 import Contact from './components/contact/Contact';
+import Cart from './components/Cart/Cart';
 
 
 
@@ -26,27 +29,27 @@ import Contact from './components/contact/Contact';
 import reportWebVitals from './reportWebVitals';
 
 
+
 ////////* Logica *//////////
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
-    <BrowserRouter>
-
-      <NavBar/>
-
-      <Routes>
-        <Route exact path='/' element={<Home/>}/>
-        <Route exact path='/products' element={<ItemlistContainer/>}/>
-        <Route exact path='products/category/:categoryId' element={<ItemlistContainer/>}/>
-        <Route exact path='product/:productId' element={<ItemDetailContainer/>}/>+
-        <Route exact path='/aboutus' element={<AboutUs/>}/>
-        <Route exact path='/contact' element={<Contact/>}/>
-      </Routes>
-
-      <Footer/>
-
-    </BrowserRouter>
+    <CartProvider>  
+      <BrowserRouter>
+        <NavBar/>
+        <Routes>
+          <Route exact path='/' element={<Home/>}/>
+          <Route exact path='/products' element={<ItemlistContainer/>}/>
+          <Route exact path='products/category/:categoryId' element={<ItemlistContainer/>}/>
+          <Route exact path='product/:productId' element={<ItemDetailContainer/>}/>
+          <Route exact path='/aboutus' element={<AboutUs/>}/>
+          <Route exact path='/contact' element={<Contact/>}/>
+          <Route exact path='/cart' element={<Cart/>}/>
+        </Routes>
+        <Footer/>
+      </BrowserRouter>
+    </CartProvider>
 
   </React.StrictMode>
 );

@@ -40,7 +40,6 @@
 .detailsLink{
     text-decoration: none;
     color: rgba(0, 0, 0, 0.381);
-    margin-bottom: 15px;
 }
 
 .detailsLink:hover{
@@ -51,3 +50,4 @@
 .card-desc {
     color: rgba(0, 0, 0, 0.607);
 }
+

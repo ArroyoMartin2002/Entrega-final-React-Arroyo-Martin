@@ -4,13 +4,13 @@
     justify-items: center;
     margin: 50px 0;
     min-height: 70.2vh;
-    gap: 150px
+    gap: 15px;
 }
 
 @media only screen and (max-width: 992px) {
     .container-detail{
         grid-template-columns: auto;
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: auto;
     }
 
     .text-detail{

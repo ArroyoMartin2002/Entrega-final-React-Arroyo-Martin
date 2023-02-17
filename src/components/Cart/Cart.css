@@ -1,0 +1,120 @@
+.cart-container{
+    display: grid;
+    align-content: center;
+    gap: 15px;
+    min-height:81vh;
+}
+
+.cart-card-container{
+    background-color: transparent;
+    margin: auto;
+}
+
+.cart-panel{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.cart-clear{
+    font-size: 20px;
+    border-radius: 7px;
+    padding: 5px;
+    box-shadow: rgba(50, 50, 93, 0.2) 0px 6px 10px -2px, rgba(0, 0, 0, 0.2) 0px 3px 7px -3px;
+    color: black;
+    background-color: white;
+    border-color: transparent;
+}
+
+.cart-continue{
+    font-size: 20px;
+    border-color: transparent;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.2) 0px 6px 10px -2px, rgba(0, 0, 0, 0.2) 0px 3px 7px -3px;
+    color: white;
+    background-color: #98062d;
+    scroll-behavior: smooth;
+    scroll-padding: 20px;
+    
+}
+
+.total{
+    margin: auto;
+    font-size: 20px;
+    padding: 6px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.2) 0px 6px 10px -2px, rgba(0, 0, 0, 0.2) 0px 3px 7px -3px;
+    color: white;
+    background-color: #98062d;
+}
+
+/* empty cart */
+
+.cart-panel-empty{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 32px 75px;
+    gap: 10px;
+}
+
+.cart-empty-text{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-family: "Proxima Nova",-apple-system,Roboto,Arial,sans-serif,sans-serif;
+}
+
+.cart-empty-text-2{
+    color: rgba(0,0,0,.55);
+    font-size: 14px;
+    font-family: "Proxima Nova",-apple-system,Roboto,Arial,sans-serif,sans-serif;
+}
+
+.cart-empty-button{
+    color: white;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    height: 48px;
+    padding: 0 24px;
+    background-color: #98062d;
+    font-family: Proxima Nova,-apple-system,Roboto,Arial,sans-serif;
+    margin: 15px 0;
+    border: transparent;
+}
+
+/* form */
+
+.cart-form{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-form-label input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 15px 0;
+    border: transparent;
+    outline-style: none;
+    box-shadow: rgba(50, 50, 93, 0.1) 0px 6px 10px -2px, rgba(0, 0, 0, 0.1) 0px 3px 7px -3px;
+}
+
+.cart-form-label :focus{
+    border: 1px solid #98062d;
+}
+
+.cart-form-input{
+    margin: 15px 0;
+    color: white;
+    border-radius: 6px;
+    height: 48px;
+    background-color: #98062d;
+    font-family: Proxima Nova,-apple-system,Roboto,Arial,sans-serif;
+    border: transparent;
+    font-weight: 900;
+    font-size: 20px;
+    box-shadow: rgba(50, 50, 93, 0.2) 0px 6px 10px -2px, rgba(0, 0, 0, 0.2) 0px 3px 7px -3px;
+}

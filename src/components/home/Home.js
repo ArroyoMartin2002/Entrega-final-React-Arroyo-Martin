@@ -2,7 +2,6 @@
 
 //Modulos
 
-
 //Estilos
 import "./Home.css";
 
@@ -11,16 +10,15 @@ import logo from '../../assets/img/logo.png'
 
 /* Logica */
 const Home = (props) => {
-
     return (
-        <sectionc className="homePage" >
-            < div class = "hero" >
+        <section className="homePage" >
+            < div className="hero">
                 <img alt="hero banner" src={logo}></img>
-                <div class = "text" >
+                <div className="text" >
                     <p>- Unlocking the rhythm of your soul -</p> 
                 </div> 
             </div>
-        </sectionc>
+        </section>
     );
 };
 

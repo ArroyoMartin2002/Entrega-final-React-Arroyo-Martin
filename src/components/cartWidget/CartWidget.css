@@ -1,3 +1,8 @@
+a:has(.cartLogo){
+    color: white;
+    text-decoration-line: none;
+}
+
 .cart{
     display: flex;
     align-items: flex-start;
@@ -5,13 +10,12 @@
     transform: translateY(5px);
 }
 
-.cartLogo{
-    filter: invert(100%);   
-}
-
 .counterCart{
     color: white;
-    align-self: center;
+}
+
+.inactive{
+    display: none;
 }
 
 @media screen and (max-width: 990px) {

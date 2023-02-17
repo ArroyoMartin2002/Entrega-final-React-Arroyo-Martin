@@ -1,8 +1,6 @@
 /* Importacion */
 
 //Modulos
-import { useParams } from "react-router-dom";
-import { useEffect } from "react";
 
 //Estilos
 import "./ItemListContainer.css";

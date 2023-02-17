@@ -3,6 +3,8 @@
 //Modulos
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { collection, getDocs, where, query } from 'firebase/firestore';
+import { db } from "../../services/firebase";
 
 //Estilos
 import "./ItemList.css";
@@ -17,21 +19,28 @@ const Itemlist = (props) => {
     const [productos, setProductos] = useState([])
 
     const {categoryId} = useParams()
-    
-    console.log(categoryId);
 
     useEffect(() => {
+        const getData = async() => {
+            //1 creamos connsulta a la base de datos
+            const queryRef = categoryId ? query(collection(db,"Lista Productos"), where("category","==",categoryId)) : collection(db,"Lista Productos");
             
-        if (categoryId != null) {
-            fetch(`https://fakestoreapi.com/products/category/${categoryId}`)
-            .then(res=>res.json())
-            .then(json=> setProductos(json.map(productos => <Item key={productos.id} id={productos.id} data={productos}/>)))
-        } else {
-            fetch(`https://fakestoreapi.com/products`)
-            .then(res=>res.json())
-            .then(json=> setProductos(json.map(productos => <Item key={productos.id} id={productos.id} data={productos}/>)))
-        }
-    
+            //2 hacer la consulta
+            const response = await getDocs(queryRef);
+            const docInfo = response.docs.map(doc => {
+                const newDoc = {
+                        id:doc.id,
+                        ...doc.data()
+                    }
+                    return newDoc
+                    
+                });
+            setProductos(docInfo.map(productos => <Item id={productos.id} key={productos.id} data={productos}/>))
+            }
+        getData();
+            
+        
+
     },[categoryId])
 
     return (
