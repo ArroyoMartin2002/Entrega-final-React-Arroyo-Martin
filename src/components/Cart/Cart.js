@@ -9,7 +9,7 @@ import "./Cart.css";
 //Componentes
 import {useCartContext} from "../Context/CartContext";
 import CartItem from "../Cart Item/CartItem";
-import { collection, addDoc, updateDoc, doc } from 'firebase/firestore';
+import { collection, addDoc } from 'firebase/firestore';
 import { db } from "../../services/firebase";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -54,12 +54,6 @@ const Cart = () => {
     }
 
     const [finishPurchaseOn,finishPurchaseChange ] = useState(false)
-
-
-    /*const updatePrice = async() => {
-        const queryRef = doc(db, "Lista Productos","B02LqYxrN2WEz9VWK9D9")
-        await updateDoc(queryRef, {price:199})
-    } */
 
     const preventDefault = (e) => {
         e.preventDefault();

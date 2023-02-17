@@ -1,7 +1,7 @@
 /* Importacion */
 
 //Modulos
-import { useContext, createContext, useState, useEffect } from "react";
+import { useContext, createContext, useState } from "react";
 
 //1 Crear contexto (valor default) => ()
 //2 exportarlo

@@ -27,7 +27,7 @@ const CartItem = (props) => {
                     <Card.Text className="">$ {totalProductPrice.toFixed(2)} </Card.Text>
                     <Link className="detailsLink" to={`/product/${id}`}>See Product</Link>
                     <span className="count-item">{count} u.</span>
-                    <button className="delete-button" onClick={() => removeItem(id)}><img src="https://cdn-icons-png.flaticon.com/512/542/542724.png"></img></button>
+                    <button className="delete-button" onClick={() => removeItem(id)}><img alt="delete icon" src="https://cdn-icons-png.flaticon.com/512/542/542724.png"></img></button>
                 </Card.Body>
         </Card>
         
